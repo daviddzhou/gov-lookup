@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html>
+	
+<link rel="stylesheet" href="styles.css">
+    
+<div class="box">
+	<head>
+		<title>U.S. Representatives Lookup</title>
+			<!-- This function creates the popup that denies access to go further into the page. 
+			If it senses there is no value inside the zipcode ID then it will return false and end the program there -->
+		
+	</head>
+
+		<h1><font size="+10">United States Representatives Lookup</font></h1>
+	<body>
+
+		<p><font size="+1">Enter a zip code to see a list of elected representatives for that area.</font></p>
+
+
+
+			<!--Creates a form which connects with the Zip Lookup php file. Uses post method which could be changed to get
+			hopefully to removed the form resubmit popup on chrome. This would require rewriting of some php scripts however 
+			which might break what works currently. --> 
+
+		<form action="/ziplookup.php" method = "post">
+			<font size="+1">Zip Code:</font><br>
+			<input type  = "text" required="" name="ZipCode" id="zipcode">
+            <br/>
+			<br/>
+			<input type="submit" value="Submit" onClick="return empty()" >
+        </form>
+        
+       
+
+	</body>
+		<br>
+</div>
+
+</html>
